@@ -2429,10 +2429,18 @@ body.scroll-locked {
     .product-card { padding: 24px 20px; }
 
     /* Tech Stack — scrollable tabs fix */
-    .tech-tabs-controls {
+    .tech-tabs-nav {
         justify-content: flex-start;
-        padding: 0 0 8px;
+        padding: 0 4px 8px;
         gap: 8px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        width: 100%;
+    }
+    .tech-tabs-nav::-webkit-scrollbar {
+        display: none;
     }
     .tech-tab-btn { padding: 10px 20px; font-size: 0.88rem; white-space: nowrap; }
     .tech-badges-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
@@ -3536,6 +3544,48 @@ body.scroll-locked {
   margin-top: 4px;
   opacity: 0;
   transition: all var(--transition-fast);
+}
+/* ── TECH STACK SECTION ── */
+.tech-stack-section {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.tech-tabs-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 40px auto 32px;
+  flex-wrap: wrap;
+  max-width: 900px;
+}
+
+.tech-tab-btn {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 12px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 2px 6px rgba(17, 23, 44, 0.02);
+}
+
+.tech-tab-btn:hover {
+  border-color: var(--color-brand);
+  color: var(--color-brand);
+  transform: translateY(-1px);
+}
+
+.tech-tab-btn.active {
+  background: var(--color-brand);
+  border-color: var(--color-brand);
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(29, 158, 218, 0.25);
 }
 
 /* ── TECH PILLS ── */
