@@ -60,7 +60,7 @@ function TechPill({ icon, label }) {
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slidesCount = 3;
+  const slidesCount = 2;
   const [activeTab, setActiveTab] = useState('front-end');
   const [activeCaseTab, setActiveCaseTab] = useState(0);
   const [formData, setFormData] = useState({ name: '', email: '', company: '', message: '', budget: 25000, nda: true });
@@ -104,36 +104,35 @@ export default function Home() {
 
   const heroSlides = [
     {
-      badge: { icon: 'fa-solid fa-bolt', text: 'Global Digital Partner' },
-      tag: 'Global Software Development Agency',
-      title: <>Build <span className="gradient-text">AI-Powered</span>, Scalable Software for Startups to Enterprises.</>,
-      desc: 'From custom SaaS to eCommerce, we deliver end-to-end solutions tailored to your business—fast, flexible, and reliable.',
-      cta1: { label: 'Schedule a Call', href: '#contact' },
+      badge: { icon: 'fa-solid fa-microchip', text: 'AI-First Engineering' },
+      tag: 'Global Software Development Partner',
+      title: <>Build <span className="gradient-text">Intelligent,</span> Scalable Software That Grows With Your Business.</>,
+      desc: 'From custom SaaS to enterprise platforms — Intactic delivers AI-powered, cloud-native solutions engineered for speed, security, and scale.',
+      cta1: { label: 'Start a Project', href: '#contact' },
       stats: [
-        { num: '850+', label: 'Tech Professionals' },
-        { num: '30+', label: 'Countries Served' },
+        { num: '200+', label: 'Products Shipped' },
+        { num: '98%', label: 'Client Satisfaction' },
       ],
-      img1: 'https://brainstation-23.com/wp-content/uploads/2025/11/bs-211.webp',
-      img2: 'https://brainstation-23.com/wp-content/uploads/2025/11/bs-212.webp',
+      img1: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80',
+      img2: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=500&q=80',
       img1Radius: '12px 12px 0px 12px',
       img2Radius: '0px 12px 12px 12px',
     },
     {
-      badge: { icon: 'fa-solid fa-users', text: 'Resource Augmentation' },
-      tag: 'Dedicated Engineering Teams',
-      title: <>Scale Your Dev Team With <span className="gradient-text">Top 1%</span> Bangladeshi Talents in 4 Weeks</>,
-      desc: 'From startups to enterprises—build scalable, secure software with our 18+ years of expertise and ISO 27001-certified teams.',
-      cta1: { label: 'Hire Your Team Now', href: '#contact' },
+      badge: { icon: 'fa-solid fa-users-gear', text: 'Dedicated Engineering Teams' },
+      tag: 'Pre-vetted Tech Talent, On Demand',
+      title: <>Extend Your Team With <span className="gradient-text">Senior Engineers</span> Ready to Ship in Days.</>,
+      desc: 'Skip the hiring lag. Get ISO 27001-certified, NDA-protected engineering pods that integrate seamlessly with your workflow and culture.',
+      cta1: { label: 'Build Your Team', href: '#contact' },
       stats: [
-        { num: '19+', label: 'Years of Experience' },
-        { num: '88%+', label: 'Employee Retention' },
+        { num: '50+', label: 'Active Clients' },
+        { num: '19+', label: 'Years of Excellence' },
       ],
-      img1: 'https://brainstation-23.com/wp-content/uploads/2025/10/HeroImg-2.1.webp',
-      img2: 'https://brainstation-23.com/wp-content/uploads/2025/10/Hero-Img-v2.2.webp',
+      img1: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&q=80',
+      img2: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&q=80',
       img1Radius: '12px 12px 12px 0px',
       img2Radius: '12px 0px 12px 12px',
     },
-
   ];
 
   const caseStudiesData = [
@@ -254,10 +253,10 @@ export default function Home() {
 
                       {/* Decorative Floating Tech Badges */}
                       <div className="hero-floating-badge badge-float-1">
-                        <i className="fa-solid fa-microchip"></i> AI & Cloud
+                        <i className="fa-solid fa-brain"></i> AI & ML
                       </div>
                       <div className="hero-floating-badge badge-float-2">
-                        <i className="fa-solid fa-code"></i> Next.js
+                        <i className="fa-brands fa-aws"></i> Cloud Native
                       </div>
                       <div className="hero-floating-badge badge-float-3">
                         <i className="fa-solid fa-shield-halved"></i> ISO 27001
@@ -285,6 +284,17 @@ export default function Home() {
           </div>
 
         </section>
+
+        {/* ── HERO → CAPABILITIES BRIDGE ── */}
+        <div className="hero-to-caps-bridge" aria-hidden="true">
+          <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F8FAFC" />
+          </svg>
+          <div className="bridge-scroll-hint">
+            <span>Our Capabilities</span>
+            <i className="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
 
         {/* ── 2. CORE CAPABILITIES / SERVICES ── */}
         <section className="capabilities-section" id="services">
