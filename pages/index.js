@@ -313,28 +313,81 @@ export default function Home() {
 
         {/* ── 2. CORE CAPABILITIES / SERVICES ── */}
         <section className="capabilities-section" id="services">
+          <div className="caps-bg-grid" aria-hidden="true" />
           <div className="section-container">
             <div className="caps-header">
               <div>
                 <span className="section-pretitle">Our Capabilities</span>
-                <h2 className="section-title">Drive Growth with Our Core<br />Capabilities</h2>
+                <h2 className="section-title">Drive Growth with Our Core<br /><span className="gradient-text">Capabilities</span></h2>
+                <p className="caps-subtitle">Full-spectrum engineering services to build, scale, and evolve your digital products.</p>
               </div>
               <a href="#contact" className="btn-outline">Explore All Services <i className="fa-solid fa-arrow-right-long"></i></a>
             </div>
             <div className="caps-grid">
               {[
-                { icon: 'fa-solid fa-people-group', title: 'Staff Augmentation', desc: 'Instantly scale your team with vetted AI-cloud experts. Pay only for the talent you need, when you need it.' },
-                { icon: 'fa-solid fa-layer-group', title: 'Managed Services', desc: 'End-to-end support for your applications, infrastructure, and digital platforms—so you can shift focus from maintenance to innovation.' },
-                { icon: 'fa-solid fa-rocket', title: 'MVP Development', desc: 'Launch market-ready MVPs in 8-12 weeks. AI-accelerated builds with 40% faster iteration cycles.' },
-                { icon: 'fa-solid fa-lightbulb', title: 'Technology Consulting', desc: 'Cut tech waste by 30% with our strategic audits. Align tools with business goals for maximum ROI.' },
-                { icon: 'fa-solid fa-rotate', title: 'Digital Transformation', desc: 'Modernize legacy systems with AI-driven automation. Achieve 50% operational efficiency gains.' },
-                { icon: 'fa-solid fa-microchip', title: 'ML & AI Development', desc: 'Deploy custom neural models, optimize LLM token usage, and train conversational agents to extract deep analytics.' },
+                {
+                  icon: 'fa-solid fa-people-group',
+                  title: 'Staff Augmentation',
+                  desc: 'Instantly scale your team with vetted AI-cloud experts. Pay only for the talent you need, when you need it.',
+                  tag: 'Talent',
+                  accent: '#1D9EDA',
+                  highlights: ['Top 1% Engineers', '4-week onboarding', 'NDA-protected'],
+                },
+                {
+                  icon: 'fa-solid fa-layer-group',
+                  title: 'Managed Services',
+                  desc: 'End-to-end support for your applications, infrastructure, and platforms—so you can focus on innovation.',
+                  tag: 'Operations',
+                  accent: '#6C63FF',
+                  highlights: ['24/7 Monitoring', 'SLA-backed', 'Auto-scaling'],
+                },
+                {
+                  icon: 'fa-solid fa-rocket',
+                  title: 'MVP Development',
+                  desc: 'Launch market-ready MVPs in 8–12 weeks. AI-accelerated builds with 40% faster iteration cycles.',
+                  tag: 'Fast Launch',
+                  accent: '#FBAF32',
+                  highlights: ['8–12 week delivery', 'Agile sprints', 'Investor-ready'],
+                },
+                {
+                  icon: 'fa-solid fa-magnifying-glass-chart',
+                  title: 'Technology Consulting',
+                  desc: 'Cut tech waste by 30% with our strategic audits. Align tools with business goals for maximum ROI.',
+                  tag: 'Strategy',
+                  accent: '#00C896',
+                  highlights: ['Architecture review', 'Cost optimization', 'Roadmapping'],
+                },
+                {
+                  icon: 'fa-solid fa-arrows-spin',
+                  title: 'Digital Transformation',
+                  desc: 'Modernize legacy systems with AI-driven automation. Achieve 50% operational efficiency gains.',
+                  tag: 'Modernization',
+                  accent: '#E63B6F',
+                  highlights: ['Legacy migration', 'Process automation', 'Cloud-native'],
+                },
+                {
+                  icon: 'fa-solid fa-brain',
+                  title: 'ML & AI Development',
+                  desc: 'Deploy custom neural models, optimize LLM token usage, and train conversational agents for deep analytics.',
+                  tag: 'AI/ML',
+                  accent: '#FF6B35',
+                  highlights: ['LLM fine-tuning', 'RAG pipelines', 'AI agents'],
+                },
               ].map((svc, i) => (
-                <a href="#contact" key={i} className="cap-card" style={{ textDecoration: 'none', color: 'inherit' }}>
-                  <div className="cap-icon"><i className={svc.icon}></i></div>
+                <a href="#contact" key={i} className="cap-card" style={{ '--cap-accent': svc.accent, textDecoration: 'none', color: 'inherit' }}>
+                  <div className="cap-card-top">
+                    <div className="cap-icon"><i className={svc.icon}></i></div>
+                    <span className="cap-tag">{svc.tag}</span>
+                  </div>
                   <h3>{svc.title}</h3>
                   <p>{svc.desc}</p>
-                  <span className="cap-link">Learn More <i className="fa-solid fa-arrow-right"></i></span>
+                  <ul className="cap-highlights">
+                    {svc.highlights.map((h, j) => (
+                      <li key={j}><i className="fa-solid fa-circle-check"></i> {h}</li>
+                    ))}
+                  </ul>
+                  <span className="cap-link">Get Started <i className="fa-solid fa-arrow-right"></i></span>
+                  <div className="cap-card-glow" aria-hidden="true" />
                 </a>
               ))}
             </div>
