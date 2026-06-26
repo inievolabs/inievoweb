@@ -495,7 +495,9 @@ export default function Home() {
         {/* ── 8. TECHNOLOGY STACKS ── */}
         <section className="tech-stack-section" id="tech-stack">
           <div className="section-container">
-            <span className="section-pretitle">Technology Specialization</span>
+            <div style={{ textAlign: 'center' }}>
+              <span className="section-pretitle">Technology Specialization</span>
+            </div>
             <h2 className="section-title text-center">Engineered on Leading Tech Stacks</h2>
             <div className="tech-tabs-nav">
               {[
