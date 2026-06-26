@@ -26,12 +26,12 @@ export default function Footer() {
         <div className="footer-links-col">
           <h4>Services</h4>
           <ul>
-            <li><a href="#services">Staff Augmentation</a></li>
+
             <li><a href="#services">Managed Services</a></li>
             <li><a href="#services">MVP Development</a></li>
             <li><a href="#services">Technology Consulting</a></li>
             <li><a href="#services">Digital Transformation</a></li>
-            <li><a href="#services">Moodle LMS Solutions</a></li>
+
           </ul>
         </div>
 
@@ -43,7 +43,7 @@ export default function Footer() {
             <li><a href="#products">Remity</a></li>
             <li><a href="#products">PocketEdge</a></li>
             <li><a href="#products">Omnizia</a></li>
-            <li><a href="#products">Insurance Tech Solutions</a></li>
+
           </ul>
         </div>
 

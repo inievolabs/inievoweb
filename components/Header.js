@@ -80,7 +80,7 @@ export default function Header() {
                     <div className="megamenu-col">
                       <h4 className="megamenu-title"><i className="fa-solid fa-cubes-stacked"></i> Collaboration Model</h4>
                       <ul className="megamenu-links">
-                        <li><a href="#services">Staff Augmentation</a></li>
+
                         <li><a href="#services">Managed Services</a></li>
                         <li><a href="#services">Digital Transformation</a></li>
                         <li><a href="#services">Technology Consulting</a></li>
@@ -94,23 +94,18 @@ export default function Header() {
                         <li><a href="#ai-section">Data Engineering</a></li>
                         <li><a href="#ai-section">Data Migration</a></li>
                         <li><a href="#ai-section">Business Intelligence</a></li>
-                        <li><a href="#products">Insurtech</a></li>
+
                         <li><a href="#services">3D Modeling Services</a></li>
-                        <li><a href="#services">Game Studio</a></li>
                         <li><a href="#tech-stack">QA Testing & Automation</a></li>
-                        <li><a href="#moodle">LMS Development</a></li>
                         <li><a href="#tech-stack">Web & Mobile App Development</a></li>
                         <li><a href="#industries">eCommerce Development</a></li>
-                        <li><a href="#tech-stack">Adobe Experience Manager</a></li>
-                        <li><a href="#tech-stack">SharePoint Services</a></li>
-                        <li><a href="#industries">Blockchain Development</a></li>
+
                       </ul>
                     </div>
                     <div className="megamenu-col">
                       <h4 className="megamenu-title"><i className="fa-solid fa-building-shield"></i> Enterprise Focused</h4>
                       <ul className="megamenu-links">
-                        <li><a href="#products">Field Force Automation</a></li>
-                        <li><a href="#industries">Banking Solution</a></li>
+
                         <li><a href="#tech-stack">Cloud Solutions</a></li>
                         <li><a href="#recognitions">Cyber Security</a></li>
                         <li><a href="#products">ERP Development</a></li>
@@ -238,7 +233,7 @@ export default function Header() {
                 <div className="accordion-section">
                   <span className="section-title">Collaboration Model</span>
                   <ul className="sub-links">
-                    <li><a href="#services" onClick={closeDrawer}>Staff Augmentation</a></li>
+
                     <li><a href="#services" onClick={closeDrawer}>Managed Services</a></li>
                     <li><a href="#services" onClick={closeDrawer}>Digital Transformation</a></li>
                     <li><a href="#services" onClick={closeDrawer}>Technology Consulting</a></li>
@@ -253,16 +248,13 @@ export default function Header() {
                     <li><a href="#tech-stack" onClick={closeDrawer}>Web & Mobile App Dev</a></li>
                     <li><a href="#industries" onClick={closeDrawer}>eCommerce Development</a></li>
                     <li><a href="#tech-stack" onClick={closeDrawer}>QA Testing & Automation</a></li>
-                    <li><a href="#tech-stack" onClick={closeDrawer}>Adobe Experience Manager</a></li>
-                    <li><a href="#tech-stack" onClick={closeDrawer}>SharePoint Services</a></li>
-                    <li><a href="#industries" onClick={closeDrawer}>Blockchain Development</a></li>
+
                   </ul>
                 </div>
                 <div className="accordion-section">
                   <span className="section-title">Enterprise Focused</span>
                   <ul className="sub-links">
-                    <li><a href="#products" onClick={closeDrawer}>Field Force Automation</a></li>
-                    <li><a href="#industries" onClick={closeDrawer}>Banking Solution</a></li>
+
                     <li><a href="#tech-stack" onClick={closeDrawer}>Cloud Solutions</a></li>
                     <li><a href="#recognitions" onClick={closeDrawer}>Cyber Security</a></li>
                     <li><a href="#products" onClick={closeDrawer}>ERP Development</a></li>

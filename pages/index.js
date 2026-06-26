@@ -300,14 +300,7 @@ export default function Home() {
             </div>
             <div className="caps-grid">
               {[
-                {
-                  icon: 'fa-solid fa-people-group',
-                  title: 'Staff Augmentation',
-                  desc: 'Instantly scale your team with vetted AI-cloud experts. Pay only for the talent you need, when you need it.',
-                  tag: 'Talent',
-                  accent: '#1D9EDA',
-                  highlights: ['Top 1% Engineers', '4-week onboarding', 'NDA-protected'],
-                },
+
                 {
                   icon: 'fa-solid fa-layer-group',
                   title: 'Managed Services',
