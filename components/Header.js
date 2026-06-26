@@ -59,10 +59,10 @@ export default function Header() {
     <>
       <header className={`site-header ${isSticky ? 'sticky' : ''}`} id="site-header">
         <div className="header-container">
-          <a href="#site-header" className="brand-logo" aria-label="Inievo Technologies Home">
+          <a href="#site-header" className="brand-logo" aria-label="Intactic Innovations Home">
             <Image
-              src="https://res.cloudinary.com/dtaaamnmf/image/upload/v1781266972/inievo_full_logo_png_akmlws.png"
-              alt="Inievo Technologies Logo"
+              src="https://res.cloudinary.com/det1qnlrh/image/upload/v1782432654/Intactic_ltgcnt.png"
+              alt="Intactic Logo"
               width={220}
               height={33}
               priority
@@ -182,7 +182,7 @@ export default function Header() {
                 <div className="megamenu-panel resources-megamenu">
                   <div className="megamenu-grid grid-2-col-only">
                     <div className="megamenu-col">
-                      <h4 className="megamenu-title"><i className="fa-solid fa-circle-info"></i> Inside Inievo Technologies</h4>
+                      <h4 className="megamenu-title"><i className="fa-solid fa-circle-info"></i> Inside Intactic</h4>
                       <ul className="megamenu-links">
                         <li><a href="#contact">About Us</a></li>
                         <li><a href="#contact">Blog</a></li>
@@ -228,8 +228,8 @@ export default function Header() {
         <div className="drawer-header">
           <a href="#site-header" className="drawer-logo" onClick={closeDrawer}>
             <Image
-              src="https://res.cloudinary.com/dtaaamnmf/image/upload/v1781266950/Inievo_wmcsma.png"
-              alt="Inievo Technologies Logo"
+              src="https://res.cloudinary.com/det1qnlrh/image/upload/v1782432654/Intactic_ltgcnt.png"
+              alt="Intactic Logo"
               width={160}
               height={32}
               style={{ objectFit: 'contain' }}
@@ -340,7 +340,7 @@ export default function Header() {
               </button>
               <div className="accordion-panel">
                 <div className="accordion-section">
-                  <span className="section-title">Inside Inievo</span>
+                  <span className="section-title">Inside Intactic</span>
                   <ul className="sub-links">
                     <li><a href="#contact" onClick={closeDrawer}>About Us</a></li>
                     <li><a href="#contact" onClick={closeDrawer}>Blog</a></li>

@@ -204,8 +204,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Brain Station 23 : Software Development Company in Bangladesh | Best Custom Software Service Agency</title>
-        <meta name="description" content="Brain Station 23 — From startups to enterprises, build scalable, secure software with 18+ years of expertise and ISO 27001-certified teams." />
+        <title>Intactic Innovations | Engineered on Leading Tech Stacks</title>
+        <meta name="description" content="Intactic Innovations — From startups to enterprises, build scalable, secure software with 18+ years of expertise and ISO 27001-certified teams." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 

@@ -7,8 +7,8 @@ export default function Footer() {
         <div className="footer-brand-col">
           <a href="#site-header" className="footer-logo">
             <Image
-              src="https://res.cloudinary.com/dtaaamnmf/image/upload/v1781266972/inievo_full_logo_png_akmlws.png"
-              alt="Inievo Technologies Logo"
+              src="https://res.cloudinary.com/det1qnlrh/image/upload/v1782432654/Intactic-white_vmyikx.png"
+              alt="Intactic Logo"
               width={180}
               height={28}
               style={{ objectFit: 'contain' }}
@@ -69,7 +69,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-lower">
-        <p>&copy; 2026 Inievo Technologies. Built with premium custom styling. All rights reserved.</p>
+        <p>&copy; 2026 Intactic Innovations. Built with premium custom styling. All rights reserved.</p>
         <div className="footer-policies">
           <a href="#contact">Privacy Policy</a>
           <a href="#contact">Terms of Service</a>
